@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-background: #f8f9ff;
+  --color-on-background: #0b1c30;
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-secondary: #1b6b4f;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #a6f2cf;
+  --color-on-secondary-container: #247155;
+  --color-surface: #f8f9ff;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #45464d;
+  --color-outline-variant: #c6c6cd;
+  --color-primary-fixed: #dae2fd;
+  --color-primary-fixed-dim: #bec6e0;
+  --color-surface-container: #e5eeff;
+
+  /* Typography */
+  --font-display-hero: "Space Grotesk", sans-serif;
+  --font-headline-lg: "Space Grotesk", sans-serif;
+  --font-headline-md: "Space Grotesk", sans-serif;
+  --font-body-base: "Inter", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-label-caps: "Space Grotesk", sans-serif;
+
+  /* Custom Spacing */
+  --spacing-gutter: 24px;
+  --spacing-xl: 72px;
+  --spacing-base: 6px;
+  --spacing-md: 24px;
+  --spacing-lg: 48px;
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/40 backdrop-blur-md border border-emerald-100/30 shadow-inner;
+  }
+  
+  .hero-gradient {
+    background: radial-gradient(circle at 50% 50%, #f8f9ff 0%, #e5eeff 100%);
+  }
+}
+
+body {
+  @apply bg-background text-on-background font-body-base antialiased;
+}
+
+@keyframes slide-in {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
