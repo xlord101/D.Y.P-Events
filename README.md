@@ -2,8 +2,6 @@
 
 A premium, full-stack intelligence portal designed to manage campus innovation, technical symposiums, and student-led communities at D.Y. Patil University. Experience management at the speed of thought.
 
-![Project Preview](https://images.unsplash.com/photo-1540575861501-7c0011e7398a?auto=format&fit=crop&q=80&w=1200)
-
 ## ✨ Key Features
 
 - **Cinematic Public Portal**: High-impact landing page featuring glassmorphic design and background video hero sections.
@@ -47,7 +45,6 @@ npm run dev
 
 - `/frontend`: React source code, components, and design tokens.
 - `/server`: Spring Boot controllers, repositories, and JPA entities.
-- `/docs`: Project technical walkthrough and viva reference.
 
 ## 🏛️ Acknowledgments
 Designed and Developed for the **D.Y. Patil University** campus ecosystem.
